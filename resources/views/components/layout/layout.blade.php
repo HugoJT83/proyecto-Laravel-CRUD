@@ -12,7 +12,6 @@
 </head>
 <body>
     <x-layout.header/>
-    <x-layout.nav/>
     <main>
         {{$slot}}
     </main>

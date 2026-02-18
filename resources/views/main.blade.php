@@ -1,7 +1,19 @@
 <x-layout.layout>
     @guest
-        <div class="hero min-h-full" >
-            hola
+        <div class="hero min-h-full h-100"
+             style="background-image: url({{url('imgs/bg-main.jpg')}});"
+        >
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-Germania font-bold">Gestiona tus personajes aquí</h1>
+                    <p class="mb-5">
+                        Lleva las cuentas de los atributos de tu personaje de forma sencilla y automatizada.
+                    </p>
+                </div>
+
+
+            </div>
         </div>
 
 
