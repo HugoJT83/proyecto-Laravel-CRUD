@@ -1,1 +1,33 @@
+<header class="p-4 flex items-center justify-between bg-white">
+    <div class="flex items-center space-x-7">
+        <img src="{{asset("imgs/DND-Emblem.ico")}}" class="w-20" alt="">
+        <h1 class="font-Germania text-5xl text-dnd">GESTOR DE PERSONAJES</h1>
+    </div>
 
+    @guest
+    <nav class="mr-10">
+        <a href="{{route("login")}}">
+            <button type="submit" class="btn rounded-s-4xl font-Germania font-light text-xl bg-red-700 border-red-700 hover:bg-dnd hover:border-dnd">Login</button>
+        </a>
+
+        <a href="{{route("register")}}">
+            <button type="submit" class="btn font-Germania rounded-e-4xl font-light text-xl bg-red-700 border-red-700 hover:bg-dnd hover:border-dnd">Registrarse</button>
+        </a>
+
+    </nav>
+    @endguest
+
+    @auth
+        <div class="content-center mr-10">
+            <h1 class="text-black text-2xl font-Germania">Bienvenido, {{auth()->user()->name}} </h1>
+            <form action="/logout" method="post">
+                @csrf
+                <button type="submit" class="btn font-Germania font-light w-full text-xl">Log out</button>
+            </form>
+
+
+        </div>
+    @endauth
+
+
+</header>
