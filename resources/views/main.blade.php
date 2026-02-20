@@ -32,7 +32,9 @@
                         <h2 class="card-title font-Germania text-2xl">Gestor de Personajes</h2>
                         <p class="font-Germania">Gestiona los atributos y el nivel de tus personajes.</p>
                         <div class="card-actions justify-end mt-5">
-                            <button class="btn bg-dnd border-dnd">Acceder</button>
+                            <a href="{{route('characters.index')}}">
+                                <button class="btn bg-dnd border-dnd">Acceder</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +49,9 @@
                         <h2 class="card-title font-Germania text-2xl">Gestor de mapas</h2>
                         <p class="font-Germania">Gestiona los espacios de tus partidas.</p>
                         <div class="card-actions justify-end mt-5">
-                            <button class="btn bg-dnd border-dnd">Acceder</button>
+                            <a href="">
+                                <button class="btn bg-dnd border-dnd">Acceder</button>
+                            </a>
                         </div>
                     </div>
                 </div>

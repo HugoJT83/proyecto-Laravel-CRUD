@@ -1,6 +1,8 @@
 <header class="p-4 flex items-center justify-between bg-base-200">
     <div class="flex items-center space-x-7">
-        <img src="{{asset("imgs/DND-Emblem.ico")}}" class="w-20" alt="">
+        <a href="{{route('main')}}">
+            <img src="{{asset("imgs/DND-Emblem.ico")}}" class="w-20" alt="">
+        </a>
         <h1 class="font-Germania text-5xl text-dnd underline">D&D Manager</h1>
     </div>
 
